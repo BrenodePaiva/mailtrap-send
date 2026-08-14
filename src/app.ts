@@ -1,6 +1,6 @@
 import express from 'express'
-import { errorHandler } from './middlewares/error-handler.middleware.ts'
-import { notFoundHandler } from './middlewares/not-found.middleware.ts'
+import { errorHandler } from './middlewares/error-handler-middleware.ts'
+import { notFoundHandler } from './middlewares/not-found-middleware.ts'
 import routes from './routes/index.ts'
 
 export function createApp(): express.Express {
