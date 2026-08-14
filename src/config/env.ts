@@ -18,5 +18,6 @@ export const env = {
     brandName: getEnv('MAILTRAP_BRAND_NAME', 'Meu Site'),
     logoPath: getEnv('MAILTRAP_LOGO_PATH', 'src/assets/logo.png'),
     toEmail: getEnv('MAILTRAP_TO_EMAIL'),
+    maxResumeSizeMb: Number(getEnv('MAX_RESUME_SIZE_MB', '5')),
   },
 } as const

@@ -1,46 +1,44 @@
 import { Router } from 'express'
-import { sendContactEmail } from '../controllers/contact-email-controller.ts'
+import { sendResume } from '../controllers/resume-controller.ts'
+import { uploadResume } from '../middlewares/upload-middleware.ts'
 
 const router = Router()
 
 /**
  * @swagger
- * /api/emails/send:
+ * /api/emails/send-resume:
  *   post:
- *     summary: Envia um e-mail de contato via Mailtrap
+ *     summary: Envia um currículo em PDF via Mailtrap
  *     tags: [Emails]
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             required:
- *               - firstName
- *               - lastName
+ *               - name
  *               - email
- *               - subject
- *               - message
+ *               - phone
+ *               - resume
  *             properties:
- *               firstName:
+ *               name:
  *                 type: string
- *                 example: João
- *               lastName:
- *                 type: string
- *                 example: Silva
+ *                 example: João Silva
  *               email:
  *                 type: string
  *                 format: email
  *                 example: joao@email.com
- *               subject:
+ *               phone:
  *                 type: string
- *                 example: Dúvida sobre serviços
- *               message:
+ *                 example: (11) 99999-9999
+ *               resume:
  *                 type: string
- *                 example: Olá, gostaria de mais informações.
+ *                 format: binary
+ *                 description: Currículo em PDF (máx. 5 MB)
  *     responses:
  *       200:
- *         description: E-mail enviado com sucesso
+ *         description: Currículo enviado com sucesso
  *         content:
  *           application/json:
  *             schema:
@@ -49,10 +47,12 @@ const router = Router()
  *                 message:
  *                   type: string
  *       400:
- *         description: Campos obrigatórios ausentes
+ *         description: Campos obrigatórios ausentes ou arquivo inválido
+ *       413:
+ *         description: Arquivo excede o tamanho máximo permitido
  *       502:
  *         description: Falha ao enviar o e-mail
  */
-router.post('/emails/send', sendContactEmail)
+router.post('/emails/send-resume', uploadResume, sendResume)
 
 export default router
