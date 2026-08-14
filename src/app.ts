@@ -1,4 +1,6 @@
 import express from 'express'
+import swaggerUi from 'swagger-ui-express'
+import { swaggerSpec } from './config/swagger.ts'
 import { errorHandler } from './middlewares/error-handler-middleware.ts'
 import { notFoundHandler } from './middlewares/not-found-middleware.ts'
 import routes from './routes/index.ts'
@@ -8,6 +10,8 @@ export function createApp(): express.Express {
 
   app.use(express.json())
   app.use(express.urlencoded({ extended: true }))
+
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
   app.use(routes)
 
