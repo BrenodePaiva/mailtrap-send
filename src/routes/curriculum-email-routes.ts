@@ -1,12 +1,12 @@
 import { Router } from 'express'
-import { sendResume } from '../controllers/resume-controller.ts'
+import { sendCurriculumEmail } from '../controllers/curriculum-email-controller.ts'
 import { uploadResume } from '../middlewares/upload-middleware.ts'
 
 const router = Router()
 
 /**
  * @swagger
- * /api/emails/send-resume:
+ * /api/emails/send-curriculum:
  *   post:
  *     summary: Envia um currículo em PDF via Mailtrap
  *     tags: [Emails]
@@ -31,7 +31,7 @@ const router = Router()
  *                 example: joao@email.com
  *               phone:
  *                 type: string
- *                 example: (11) 99999-9999
+ *                 example: (21) 99999-9999
  *               resume:
  *                 type: string
  *                 format: binary
@@ -53,6 +53,6 @@ const router = Router()
  *       502:
  *         description: Falha ao enviar o e-mail
  */
-router.post('/emails/send-resume', uploadResume, sendResume)
+router.post('/emails/send-curriculum', uploadResume, sendCurriculumEmail)
 
 export default router

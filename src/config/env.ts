@@ -14,10 +14,12 @@ export const env = {
   mailtrap: {
     apiToken: getEnv('MAILTRAP_API_TOKEN'),
     senderEmail: getEnv('MAILTRAP_SENDER_EMAIL'),
-    senderName: getEnv('MAILTRAP_SENDER_NAME', 'Mailtrap'),
+    senderContact: getEnv('MAILTRAP_SENDER_CONTACT', 'Mailtrap'),
+    senderCurriculum: getEnv('MAILTRAP_SENDER_CURRICULUM', 'Mailtrap'),
     brandName: getEnv('MAILTRAP_BRAND_NAME', 'Meu Site'),
     logoPath: getEnv('MAILTRAP_LOGO_PATH', 'src/assets/logo.png'),
-    toEmail: getEnv('MAILTRAP_TO_EMAIL'),
+    toContact: getEnv('MAILTRAP_TO_CONTACT'),
+    toCurriculum: getEnv('MAILTRAP_TO_CURRICULUM'),
     maxResumeSizeMb: Number(getEnv('MAX_RESUME_SIZE_MB', '5')),
   },
 } as const

@@ -5,7 +5,7 @@ const router = Router()
 
 /**
  * @swagger
- * /api/emails/send:
+ * /api/emails/send-contact:
  *   post:
  *     summary: Envia um e-mail de contato via Mailtrap
  *     tags: [Emails]
@@ -53,6 +53,6 @@ const router = Router()
  *       502:
  *         description: Falha ao enviar o e-mail
  */
-router.post('/emails/send', sendContactEmail)
+router.post('/emails/send-contact', sendContactEmail)
 
 export default router

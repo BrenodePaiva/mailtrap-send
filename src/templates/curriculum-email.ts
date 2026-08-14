@@ -1,6 +1,6 @@
 import { BRAND_COLOR, BRAND_COLOR_LIGHT, escapeHtml, renderEmailLayout } from './shared.ts'
 
-interface ResumeEmailData {
+interface CurriculumEmailData {
   name: string
   email: string
   phone: string
@@ -16,7 +16,7 @@ function formatFileSize(bytes: number): string {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
 }
 
-export function renderResumeEmail(data: ResumeEmailData): string {
+export function renderCurriculumEmail(data: CurriculumEmailData): string {
   const name = escapeHtml(data.name)
   const email = escapeHtml(data.email)
   const phone = escapeHtml(data.phone)

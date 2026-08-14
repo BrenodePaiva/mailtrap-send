@@ -2,9 +2,9 @@ import type { Request, Response } from 'express'
 import { mailtrap } from '../config/mailtrap.ts'
 import { env } from '../config/env.ts'
 import { logo } from '../config/logo.ts'
-import { renderResumeEmail } from '../templates/resume-email.ts'
+import { renderCurriculumEmail } from '../templates/curriculum-email.ts'
 
-interface ResumeRequest {
+interface SendCurriculumEmailRequest {
   name: string
   email: string
   phone: string
@@ -25,8 +25,8 @@ function isPdfBuffer(file: Express.Multer.File): boolean {
   )
 }
 
-export async function sendResume(req: Request, res: Response): Promise<void> {
-  const { name, email, phone }: ResumeRequest = req.body ?? {}
+export async function sendCurriculumEmail(req: Request, res: Response): Promise<void> {
+  const { name, email, phone }: SendCurriculumEmailRequest = req.body ?? {}
   const file = req.file
 
   const errors: string[] = []
@@ -69,13 +69,13 @@ export async function sendResume(req: Request, res: Response): Promise<void> {
   try {
     const result = await mailtrap.send({
       from: {
-        name: env.mailtrap.senderName,
+        name: env.mailtrap.senderCurriculum,
         email: env.mailtrap.senderEmail,
       },
-      to: [{ email: env.mailtrap.toEmail }],
+      to: [{ email: env.mailtrap.toCurriculum }],
       subject: `Novo currículo de ${name.trim()}`,
       text: `Novo currículo recebido\n\nNome: ${name.trim()}\nE-mail: ${email.trim()}\nTelefone: ${phone.trim()}\n\nCurrículo anexado: ${resumeAttachment.filename}`,
-      html: renderResumeEmail({
+      html: renderCurriculumEmail({
         name: name.trim(),
         email: email.trim(),
         phone: phone.trim(),

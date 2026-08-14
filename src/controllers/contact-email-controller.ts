@@ -4,7 +4,7 @@ import { env } from '../config/env.ts'
 import { logo } from '../config/logo.ts'
 import { renderContactEmail } from '../templates/contact-email.ts'
 
-interface SendEmailRequest {
+interface SendContactEmailRequest {
   firstName: string
   lastName: string
   email: string
@@ -12,8 +12,8 @@ interface SendEmailRequest {
   message: string
 }
 
-export async function sendEmail(req: Request, res: Response): Promise<void> {
-  const { firstName, lastName, email, subject, message }: SendEmailRequest = req.body ?? {}
+export async function sendContactEmail(req: Request, res: Response): Promise<void> {
+  const { firstName, lastName, email, subject, message }: SendContactEmailRequest = req.body ?? {}
 
   if (!firstName || !lastName || !email || !subject || !message) {
     res.status(400).json({
@@ -25,10 +25,10 @@ export async function sendEmail(req: Request, res: Response): Promise<void> {
   try {
     const result = await mailtrap.send({
       from: {
-        name: env.mailtrap.senderName,
+        name: env.mailtrap.senderContact,
         email: env.mailtrap.senderEmail,
       },
-      to: [{ email: env.mailtrap.toEmail }],
+      to: [{ email: env.mailtrap.toContact }],
       subject,
       text: `Nova mensagem de contato\n\nNome: ${firstName} ${lastName}\nE-mail: ${email}\n\nMensagem:\n${message}`,
       html: renderContactEmail({
