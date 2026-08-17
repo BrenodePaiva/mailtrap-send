@@ -10,12 +10,16 @@ const options: swaggerJsdoc.Options = {
     },
     servers: [
       {
+        url: 'https://mailtrap-send.vercel.app',
+        description: 'Production',
+      },
+      {
         url: 'http://localhost:3000',
         description: 'Local development',
       },
     ],
   },
-  apis: ['./src/**/*.ts'],
+  apis: ['./src/**/*.ts', './src/**/*.js'],
 }
 
 export const swaggerSpec = swaggerJsdoc(options)
