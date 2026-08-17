@@ -1,6 +1,5 @@
 import express from 'express'
-import swaggerUi from 'swagger-ui-express'
-import { swaggerSpec } from './config/swagger.js'
+import { swaggerDocsHtml } from './config/swagger-docs.js'
 import { errorHandler } from './middlewares/error-handler-middleware.js'
 import { notFoundHandler } from './middlewares/not-found-middleware.js'
 import routes from './routes/index.js'
@@ -11,7 +10,8 @@ export function createApp(): express.Express {
   app.use(express.json())
   app.use(express.urlencoded({ extended: true }))
 
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
+  app.get('/api-docs', (_req, res) => res.send(swaggerDocsHtml))
+  app.get('/api-docs/', (_req, res) => res.send(swaggerDocsHtml))
 
   app.use(routes)
 
