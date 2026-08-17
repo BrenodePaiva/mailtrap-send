@@ -1,8 +1,8 @@
 import { Router } from 'express'
-import { sendCurriculumEmail } from '../controllers/curriculum-email-controller.ts'
-import { uploadResume } from '../middlewares/upload-middleware.ts'
-import { validateSchema } from '../middlewares/validate-schema-middleware.ts'
-import { curriculumRequestSchema } from '../schemas/curriculum-email-schema.ts'
+import { sendCurriculumEmail } from '../controllers/curriculum-email-controller.js'
+import { uploadResume } from '../middlewares/upload-middleware.js'
+import { validateSchema } from '../middlewares/validate-schema-middleware.js'
+import { curriculumRequestSchema } from '../schemas/curriculum-email-schema.js'
 
 const router = Router()
 

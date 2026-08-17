@@ -1,9 +1,9 @@
 import express from 'express'
 import swaggerUi from 'swagger-ui-express'
-import { swaggerSpec } from './config/swagger.ts'
-import { errorHandler } from './middlewares/error-handler-middleware.ts'
-import { notFoundHandler } from './middlewares/not-found-middleware.ts'
-import routes from './routes/index.ts'
+import { swaggerSpec } from './config/swagger.js'
+import { errorHandler } from './middlewares/error-handler-middleware.js'
+import { notFoundHandler } from './middlewares/not-found-middleware.js'
+import routes from './routes/index.js'
 
 export function createApp(): express.Express {
   const app = express()

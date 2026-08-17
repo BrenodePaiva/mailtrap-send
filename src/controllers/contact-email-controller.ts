@@ -1,9 +1,9 @@
 import type { Request, Response } from 'express'
-import { mailtrap } from '../config/mailtrap.ts'
-import { env } from '../config/env.ts'
-import { logo } from '../config/logo.ts'
-import { renderContactEmail } from '../templates/contact-email.ts'
-import type { ContactEmailInput } from '../schemas/contact-email-schema.ts'
+import { mailtrap } from '../config/mailtrap.js'
+import { env } from '../config/env.js'
+import { logo } from '../config/logo.js'
+import { renderContactEmail } from '../templates/contact-email.js'
+import type { ContactEmailInput } from '../schemas/contact-email-schema.js'
 
 export async function sendContactEmail(req: Request, res: Response): Promise<void> {
   const { firstName, lastName, email, subject, message } = res.locals.validated as ContactEmailInput

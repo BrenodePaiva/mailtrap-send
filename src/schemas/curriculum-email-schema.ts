@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { emailSchema, nameSchema, phoneSchema, resumeFileSchema } from './shared.ts'
+import { emailSchema, nameSchema, phoneSchema, resumeFileSchema } from './shared.js'
 
 export const curriculumBodySchema = z
   .object({

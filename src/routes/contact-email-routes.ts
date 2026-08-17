@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import { sendContactEmail } from '../controllers/contact-email-controller.ts'
-import { validateSchema } from '../middlewares/validate-schema-middleware.ts'
-import { contactEmailSchema } from '../schemas/contact-email-schema.ts'
+import { sendContactEmail } from '../controllers/contact-email-controller.js'
+import { validateSchema } from '../middlewares/validate-schema-middleware.js'
+import { contactEmailSchema } from '../schemas/contact-email-schema.js'
 
 const router = Router()
 

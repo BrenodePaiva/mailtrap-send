@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { env } from '../config/env.ts'
+import { env } from '../config/env.js'
 
 export const emailSchema = z
   .string({ error: 'O campo e-mail é obrigatório' })

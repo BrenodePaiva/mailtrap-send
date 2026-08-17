@@ -4,13 +4,11 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "lib": ["ES2023"],
-    "rootDir": "src",
     "outDir": "dist",
     "strict": true,
     "noEmit": true,
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
-    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
@@ -19,5 +17,5 @@
     "resolveJsonModule": true,
     "sourceMap": true
   },
-  "include": ["src"]
+  "include": ["src", "api"]
 }

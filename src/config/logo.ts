@@ -1,8 +1,8 @@
 import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import type { Attachment } from 'mailtrap'
-import { env } from './env.ts'
-import { LOGO_BASE64 } from '../assets/logo-data.ts'
+import { env } from './env.js'
+import { LOGO_BASE64 } from '../assets/logo-data.js'
 
 const MIME_BY_EXTENSION: Record<string, string> = {
   '.png': 'image/png',

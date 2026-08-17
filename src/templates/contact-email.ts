@@ -1,4 +1,4 @@
-import { BRAND_COLOR, BRAND_COLOR_LIGHT, escapeHtml, renderEmailLayout } from './shared.ts'
+import { BRAND_COLOR, BRAND_COLOR_LIGHT, escapeHtml, renderEmailLayout } from './shared.js'
 
 interface ContactEmailData {
   firstName: string

@@ -1,9 +1,9 @@
 import type { Request, Response } from 'express'
-import { mailtrap } from '../config/mailtrap.ts'
-import { env } from '../config/env.ts'
-import { logo } from '../config/logo.ts'
-import { renderCurriculumEmail } from '../templates/curriculum-email.ts'
-import type { CurriculumRequestInput } from '../schemas/curriculum-email-schema.ts'
+import { mailtrap } from '../config/mailtrap.js'
+import { env } from '../config/env.js'
+import { logo } from '../config/logo.js'
+import { renderCurriculumEmail } from '../templates/curriculum-email.js'
+import type { CurriculumRequestInput } from '../schemas/curriculum-email-schema.js'
 
 export async function sendCurriculumEmail(req: Request, res: Response): Promise<void> {
   const { body, file } = res.locals.validated as CurriculumRequestInput
