@@ -1,6 +1,8 @@
 import { Router } from 'express'
 import { sendCurriculumEmail } from '../controllers/curriculum-email-controller.ts'
 import { uploadResume } from '../middlewares/upload-middleware.ts'
+import { validateSchema } from '../middlewares/validate-schema-middleware.ts'
+import { curriculumRequestSchema } from '../schemas/curriculum-email-schema.ts'
 
 const router = Router()
 
@@ -47,12 +49,33 @@ const router = Router()
  *                 message:
  *                   type: string
  *       400:
- *         description: Campos obrigatórios ausentes ou arquivo inválido
+ *         description: Bad Request
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Dados inválidos
+ *                 errors:
+ *                  type: object
+ *                  properties:
+ *                    (body or file):
+ *                      type: array
+ *                      items:
+ *                          type: string
+ *                          example: mensagem
  *       413:
  *         description: Arquivo excede o tamanho máximo permitido
  *       502:
  *         description: Falha ao enviar o e-mail
  */
-router.post('/emails/send-curriculum', uploadResume, sendCurriculumEmail)
+router.post(
+  '/emails/send-curriculum',
+  uploadResume,
+  validateSchema(curriculumRequestSchema, 'body-and-file'),
+  sendCurriculumEmail,
+)
 
 export default router

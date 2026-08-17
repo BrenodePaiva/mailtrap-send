@@ -1,5 +1,7 @@
 import { Router } from 'express'
 import { sendContactEmail } from '../controllers/contact-email-controller.ts'
+import { validateSchema } from '../middlewares/validate-schema-middleware.ts'
+import { contactEmailSchema } from '../schemas/contact-email-schema.ts'
 
 const router = Router()
 
@@ -48,11 +50,30 @@ const router = Router()
  *               properties:
  *                 message:
  *                   type: string
+ *
  *       400:
- *         description: Campos obrigatórios ausentes
+ *         description: Bad Request
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: Dados inválidos
+ *                 errors:
+ *                  type: object
+ *                  properties:
+ *                    (campoInválido):
+ *                      type: array
+ *                      items:
+ *                          type: string
+ *                          example: mensagem
+ *
+ *
  *       502:
  *         description: Falha ao enviar o e-mail
  */
-router.post('/emails/send-contact', sendContactEmail)
+router.post('/emails/send-contact', validateSchema(contactEmailSchema), sendContactEmail)
 
 export default router
