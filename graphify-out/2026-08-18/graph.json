@@ -4,32 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "ContactEmailInput",
-      "file_type": "code",
-      "source_file": "src/schemas/contact-email-schema.ts",
-      "source_location": "L22",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "src_schemas_contact_email_schema_contactemailinput",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "contactemailinput"
-    },
-    {
-      "label": "CurriculumRequestInput",
-      "file_type": "code",
-      "source_file": "src/schemas/curriculum-email-schema.ts",
-      "source_location": "L19",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "src_schemas_curriculum_email_schema_curriculumrequestinput",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "curriculumrequestinput"
-    },
-    {
       "label": "ValidationSource",
       "file_type": "code",
       "source_file": "src/middlewares/validate-schema-middleware.ts",
@@ -37,10 +11,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "src_middlewares_validate_schema_middleware_validationsource",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
-      "norm_label": "validationsource"
+      "community_name": "Routes & Middleware",
+      "norm_label": "validationsource",
+      "id": "src_middlewares_validate_schema_middleware_validationsource"
     },
     {
       "label": "ContactEmailData",
@@ -52,7 +26,7 @@
       "_origin": "ast",
       "id": "src_templates_contact_email_contactemaildata",
       "community": 5,
-      "community_name": "templates/shared.ts",
+      "community_name": "Email Templates",
       "norm_label": "contactemaildata"
     },
     {
@@ -65,7 +39,7 @@
       "_origin": "ast",
       "id": "src_templates_curriculum_email_curriculumemaildata",
       "community": 5,
-      "community_name": "templates/shared.ts",
+      "community_name": "Email Templates",
       "norm_label": "curriculumemaildata"
     },
     {
@@ -76,10 +50,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "src_templates_shared_brandheaderdata",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "brandheaderdata"
+      "community_name": "Email Templates",
+      "norm_label": "brandheaderdata",
+      "id": "src_templates_shared_brandheaderdata"
     },
     {
       "label": "EmailLayoutData",
@@ -89,10 +63,36 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "src_templates_shared_emaillayoutdata",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "emaillayoutdata"
+      "community_name": "Email Templates",
+      "norm_label": "emaillayoutdata",
+      "id": "src_templates_shared_emaillayoutdata"
+    },
+    {
+      "label": "ContactEmailInput",
+      "file_type": "code",
+      "source_file": "src/schemas/contact-email-schema.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "src_schemas_contact_email_schema_contactemailinput",
+      "community": 8,
+      "community_name": "Validation Schemas",
+      "norm_label": "contactemailinput"
+    },
+    {
+      "label": "CurriculumRequestInput",
+      "file_type": "code",
+      "source_file": "src/schemas/curriculum-email-schema.ts",
+      "source_location": "L19",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "src_schemas_curriculum_email_schema_curriculumrequestinput",
+      "community": 8,
+      "community_name": "Validation Schemas",
+      "norm_label": "curriculumrequestinput"
     },
     {
       "label": "getEnv()",
@@ -101,10 +101,10 @@
       "source_location": "L3",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_config_env_getenv",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "getenv()"
+      "community_name": "Env & Logo Config",
+      "norm_label": "getenv()",
+      "id": "src_config_env_getenv"
     },
     {
       "label": "loadLogo()",
@@ -115,7 +115,7 @@
       "_origin": "ast",
       "id": "src_config_logo_loadlogo",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "loadlogo()"
     },
     {
@@ -126,45 +126,9 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_controllers_contact_email_controller_sendcontactemail",
-      "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community": 3,
+      "community_name": "Env & Logo Config",
       "norm_label": "sendcontactemail()"
-    },
-    {
-      "label": "sendCurriculumEmail()",
-      "file_type": "code",
-      "source_file": "src/controllers/curriculum-email-controller.ts",
-      "source_location": "L8",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_controllers_curriculum_email_controller_sendcurriculumemail",
-      "community": 4,
-      "community_name": "curriculum-email-routes.ts",
-      "norm_label": "sendcurriculumemail()"
-    },
-    {
-      "label": "getHealth()",
-      "file_type": "code",
-      "source_file": "src/controllers/health-controller.ts",
-      "source_location": "L3",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_controllers_health_controller_gethealth",
-      "community": 4,
-      "community_name": "curriculum-email-routes.ts",
-      "norm_label": "gethealth()"
-    },
-    {
-      "label": "validateSchema()",
-      "file_type": "code",
-      "source_file": "src/middlewares/validate-schema-middleware.ts",
-      "source_location": "L6",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_middlewares_validate_schema_middleware_validateschema",
-      "community": 4,
-      "community_name": "curriculum-email-routes.ts",
-      "norm_label": "validateschema()"
     },
     {
       "label": "renderContactEmail()",
@@ -174,9 +138,45 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_templates_contact_email_rendercontactemail",
-      "community": 5,
-      "community_name": "templates/shared.ts",
+      "community": 3,
+      "community_name": "Env & Logo Config",
       "norm_label": "rendercontactemail()"
+    },
+    {
+      "label": "getHealth()",
+      "file_type": "code",
+      "source_file": "src/controllers/health-controller.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Routes & Middleware",
+      "norm_label": "gethealth()",
+      "id": "src_controllers_health_controller_gethealth"
+    },
+    {
+      "label": "validateSchema()",
+      "file_type": "code",
+      "source_file": "src/middlewares/validate-schema-middleware.ts",
+      "source_location": "L6",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Routes & Middleware",
+      "norm_label": "validateschema()",
+      "id": "src_middlewares_validate_schema_middleware_validateschema"
+    },
+    {
+      "label": "sendCurriculumEmail()",
+      "file_type": "code",
+      "source_file": "src/controllers/curriculum-email-controller.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_controllers_curriculum_email_controller_sendcurriculumemail",
+      "community": 5,
+      "community_name": "Email Templates",
+      "norm_label": "sendcurriculumemail()"
     },
     {
       "label": "formatFileSize()",
@@ -187,7 +187,7 @@
       "_origin": "ast",
       "id": "src_templates_curriculum_email_formatfilesize",
       "community": 5,
-      "community_name": "templates/shared.ts",
+      "community_name": "Email Templates",
       "norm_label": "formatfilesize()"
     },
     {
@@ -199,7 +199,7 @@
       "_origin": "ast",
       "id": "src_templates_curriculum_email_rendercurriculumemail",
       "community": 5,
-      "community_name": "templates/shared.ts",
+      "community_name": "Email Templates",
       "norm_label": "rendercurriculumemail()"
     },
     {
@@ -209,10 +209,10 @@
       "source_location": "L5",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_templates_shared_escapehtml",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "escapehtml()"
+      "community_name": "Email Templates",
+      "norm_label": "escapehtml()",
+      "id": "src_templates_shared_escapehtml"
     },
     {
       "label": "renderBrandHeader()",
@@ -221,10 +221,10 @@
       "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_templates_shared_renderbrandheader",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "renderbrandheader()"
+      "community_name": "Email Templates",
+      "norm_label": "renderbrandheader()",
+      "id": "src_templates_shared_renderbrandheader"
     },
     {
       "label": "renderEmailLayout()",
@@ -233,21 +233,21 @@
       "source_location": "L35",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_templates_shared_renderemaillayout",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "renderemaillayout()"
+      "community_name": "Email Templates",
+      "norm_label": "renderemaillayout()",
+      "id": "src_templates_shared_renderemaillayout"
     },
     {
       "label": "createApp()",
       "file_type": "code",
       "source_file": "src/app.ts",
-      "source_location": "L9",
+      "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
       "id": "src_app_createapp",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "createapp()"
     },
     {
@@ -259,7 +259,7 @@
       "_origin": "ast",
       "id": "src_middlewares_error_handler_middleware_errorhandler",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "errorhandler()"
     },
     {
@@ -269,394 +269,372 @@
       "source_location": "L3",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_middlewares_not_found_middleware_notfoundhandler",
       "community": 6,
-      "community_name": "app.ts",
-      "norm_label": "notfoundhandler()"
+      "community_name": "App Bootstrap & Swagger",
+      "norm_label": "notfoundhandler()",
+      "id": "src_middlewares_not_found_middleware_notfoundhandler"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "devdependencies"
     },
     {
       "label": "@commitlint/cli",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "package_devdependencies_commitlint_cli",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@commitlint/cli"
     },
     {
       "label": "@commitlint/config-conventional",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "package_devdependencies_commitlint_config_conventional",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@commitlint/config-conventional"
     },
     {
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "eslint"
     },
     {
       "label": "eslint-config-prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_config_prettier",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "eslint-config-prettier"
     },
     {
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_js",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@eslint/js"
     },
     {
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "package_devdependencies_globals",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "globals"
     },
     {
       "label": "husky",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L49",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "package_devdependencies_husky",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "husky"
     },
     {
       "label": "lint-staged",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L50",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "package_devdependencies_lint_staged",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "lint-staged"
     },
     {
       "label": "prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "package_devdependencies_prettier",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "prettier"
     },
     {
       "label": "tsx",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "package_devdependencies_tsx",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "tsx"
-    },
-    {
-      "label": "@types/cors",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "package_devdependencies_types_cors",
-      "community": 0,
-      "community_name": "devDependencies",
-      "norm_label": "@types/cors"
     },
     {
       "label": "@types/express",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "package_devdependencies_types_express",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/express"
     },
     {
       "label": "@types/multer",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "package_devdependencies_types_multer",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/multer"
     },
     {
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/node"
     },
     {
       "label": "@types/swagger-jsdoc",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "package_devdependencies_types_swagger_jsdoc",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/swagger-jsdoc"
     },
     {
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "typescript"
     },
     {
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "package_devdependencies_typescript_eslint",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "typescript-eslint"
     },
     {
       "label": "@commitlint/cli",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "commitlint_cli",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@commitlint/cli"
     },
     {
       "label": "@commitlint/config-conventional",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "commitlint_config_conventional",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@commitlint/config-conventional"
     },
     {
       "label": "eslint",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "eslint",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "eslint"
     },
     {
       "label": "eslint-config-prettier",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "eslint_config_prettier",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "eslint-config-prettier"
     },
     {
       "label": "@eslint/js",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "eslint_js",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@eslint/js"
     },
     {
       "label": "globals",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "globals",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "globals"
     },
     {
       "label": "husky",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L49",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "husky",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "husky"
     },
     {
       "label": "lint-staged",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L50",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "lint_staged",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "lint-staged"
     },
     {
       "label": "prettier",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "prettier",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "prettier"
     },
     {
       "label": "tsx",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "tsx",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "tsx"
-    },
-    {
-      "label": "@types/cors",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "types_cors",
-      "community": 0,
-      "community_name": "devDependencies",
-      "norm_label": "@types/cors"
     },
     {
       "label": "@types/express",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "types_express",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/express"
     },
     {
       "label": "@types/multer",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "types_multer",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/multer"
     },
     {
       "label": "@types/node",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "types_node",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/node"
     },
     {
       "label": "@types/swagger-jsdoc",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "types_swagger_jsdoc",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "@types/swagger-jsdoc"
     },
     {
       "label": "typescript",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "typescript",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "typescript"
     },
     {
       "label": "typescript-eslint",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "typescript_eslint",
       "community": 0,
-      "community_name": "devDependencies",
+      "community_name": "Lint Tooling",
       "norm_label": "typescript-eslint"
     },
     {
@@ -667,7 +645,7 @@
       "_origin": "ast",
       "id": "package",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "package.json"
     },
     {
@@ -678,7 +656,7 @@
       "_origin": "ast",
       "id": "package_author",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "author"
     },
     {
@@ -689,7 +667,7 @@
       "_origin": "ast",
       "id": "package_description",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "description"
     },
     {
@@ -700,7 +678,7 @@
       "_origin": "ast",
       "id": "package_engines",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "engines"
     },
     {
@@ -711,7 +689,7 @@
       "_origin": "ast",
       "id": "package_engines_node",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "node"
     },
     {
@@ -722,7 +700,7 @@
       "_origin": "ast",
       "id": "package_keywords",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "keywords"
     },
     {
@@ -733,7 +711,7 @@
       "_origin": "ast",
       "id": "package_license",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "license"
     },
     {
@@ -744,7 +722,7 @@
       "_origin": "ast",
       "id": "package_lint_staged",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "lint-staged"
     },
     {
@@ -755,7 +733,7 @@
       "_origin": "ast",
       "id": "package_lint_staged_ts",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "*.ts"
     },
     {
@@ -766,7 +744,7 @@
       "_origin": "ast",
       "id": "package_name",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "name"
     },
     {
@@ -777,7 +755,7 @@
       "_origin": "ast",
       "id": "package_scripts",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "scripts"
     },
     {
@@ -788,7 +766,7 @@
       "_origin": "ast",
       "id": "package_scripts_dev",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "dev"
     },
     {
@@ -799,7 +777,7 @@
       "_origin": "ast",
       "id": "package_scripts_format",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "format"
     },
     {
@@ -810,7 +788,7 @@
       "_origin": "ast",
       "id": "package_scripts_format_check",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "format:check"
     },
     {
@@ -821,7 +799,7 @@
       "_origin": "ast",
       "id": "package_scripts_lint",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "lint"
     },
     {
@@ -832,7 +810,7 @@
       "_origin": "ast",
       "id": "package_scripts_lint_fix",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "lint:fix"
     },
     {
@@ -843,7 +821,7 @@
       "_origin": "ast",
       "id": "package_scripts_prepare",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "prepare"
     },
     {
@@ -854,7 +832,7 @@
       "_origin": "ast",
       "id": "package_scripts_start",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "start"
     },
     {
@@ -865,7 +843,7 @@
       "_origin": "ast",
       "id": "package_scripts_typecheck",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "typecheck"
     },
     {
@@ -876,7 +854,7 @@
       "_origin": "ast",
       "id": "package_type",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "type"
     },
     {
@@ -887,7 +865,7 @@
       "_origin": "ast",
       "id": "package_version",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "version"
     },
     {
@@ -898,7 +876,7 @@
       "_origin": "ast",
       "id": "ref_eslint_fix",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "eslint --fix"
     },
     {
@@ -909,7 +887,7 @@
       "_origin": "ast",
       "id": "ref_prettier_write",
       "community": 1,
-      "community_name": "package.json",
+      "community_name": "Package Metadata",
       "norm_label": "prettier --write"
     },
     {
@@ -920,7 +898,7 @@
       "_origin": "ast",
       "id": "vercel",
       "community": 10,
-      "community_name": "vercel.json",
+      "community_name": "Vercel Deployment",
       "norm_label": "vercel.json"
     },
     {
@@ -931,7 +909,7 @@
       "_origin": "ast",
       "id": "vercel_rewrites",
       "community": 10,
-      "community_name": "vercel.json",
+      "community_name": "Vercel Deployment",
       "norm_label": "rewrites"
     },
     {
@@ -942,7 +920,7 @@
       "_origin": "ast",
       "id": "vercel_schema",
       "community": 10,
-      "community_name": "vercel.json",
+      "community_name": "Vercel Deployment",
       "norm_label": "$schema"
     },
     {
@@ -951,10 +929,10 @@
       "source_file": "commitlint.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "commitlint_config",
       "community": 11,
-      "community_name": "commitlint.config.mjs",
-      "norm_label": "commitlint.config.mjs"
+      "community_name": "Commitlint Config",
+      "norm_label": "commitlint.config.mjs",
+      "id": "commitlint_config"
     },
     {
       "label": "eslint.config.mjs",
@@ -962,120 +940,10 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "eslint_config",
       "community": 12,
-      "community_name": "eslint.config.mjs",
-      "norm_label": "eslint.config.mjs"
-    },
-    {
-      "label": "query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p",
-      "community": 14,
-      "community_name": "Q: Why does devDependencies connect Lint Tooling to Package Metadata?",
-      "norm_label": "query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md"
-    },
-    {
-      "label": "Answer",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_answer",
-      "community": 14,
-      "community_name": "Q: Why does devDependencies connect Lint Tooling to Package Metadata?",
-      "norm_label": "answer"
-    },
-    {
-      "label": "Outcome",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_outcome",
-      "community": 14,
-      "community_name": "Q: Why does devDependencies connect Lint Tooling to Package Metadata?",
-      "norm_label": "outcome"
-    },
-    {
-      "label": "Q: Why does devDependencies connect Lint Tooling to Package Metadata?",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_q_why_does_devdependencies_connect_lint_tooling_to_package_metadata",
-      "community": 14,
-      "community_name": "Q: Why does devDependencies connect Lint Tooling to Package Metadata?",
-      "norm_label": "q: why does devdependencies connect lint tooling to package metadata?"
-    },
-    {
-      "label": "Source Nodes",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_source_nodes",
-      "community": 14,
-      "community_name": "Q: Why does devDependencies connect Lint Tooling to Package Metadata?",
-      "norm_label": "source nodes"
-    },
-    {
-      "label": "query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies",
-      "community": 15,
-      "community_name": "Q: Why does dependencies connect Runtime Dependencies to Package Metadata?",
-      "norm_label": "query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md"
-    },
-    {
-      "label": "Answer",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_answer",
-      "community": 15,
-      "community_name": "Q: Why does dependencies connect Runtime Dependencies to Package Metadata?",
-      "norm_label": "answer"
-    },
-    {
-      "label": "Outcome",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_outcome",
-      "community": 15,
-      "community_name": "Q: Why does dependencies connect Runtime Dependencies to Package Metadata?",
-      "norm_label": "outcome"
-    },
-    {
-      "label": "Q: Why does dependencies connect Runtime Dependencies to Package Metadata?",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_q_why_does_dependencies_connect_runtime_dependencies_to_package_metadata",
-      "community": 15,
-      "community_name": "Q: Why does dependencies connect Runtime Dependencies to Package Metadata?",
-      "norm_label": "q: why does dependencies connect runtime dependencies to package metadata?"
-    },
-    {
-      "label": "Source Nodes",
-      "file_type": "document",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_source_nodes",
-      "community": 15,
-      "community_name": "Q: Why does dependencies connect Runtime Dependencies to Package Metadata?",
-      "norm_label": "source nodes"
+      "community_name": "ESLint Config",
+      "norm_label": "eslint.config.mjs",
+      "id": "eslint_config"
     },
     {
       "label": "tsconfig.json",
@@ -1085,7 +953,7 @@
       "_origin": "ast",
       "id": "tsconfig",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "tsconfig.json"
     },
     {
@@ -1096,7 +964,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "compileroptions"
     },
     {
@@ -1107,7 +975,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_erasablesyntaxonly",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "erasablesyntaxonly"
     },
     {
@@ -1118,7 +986,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_esmoduleinterop",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "esmoduleinterop"
     },
     {
@@ -1129,7 +997,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_forceconsistentcasinginfilenames",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "forceconsistentcasinginfilenames"
     },
     {
@@ -1140,7 +1008,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_lib",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "lib"
     },
     {
@@ -1151,7 +1019,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_module",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "module"
     },
     {
@@ -1162,7 +1030,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_moduleresolution",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "moduleresolution"
     },
     {
@@ -1173,7 +1041,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_noemit",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "noemit"
     },
     {
@@ -1184,7 +1052,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_noimplicitoverride",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "noimplicitoverride"
     },
     {
@@ -1195,7 +1063,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_nouncheckedindexedaccess",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "nouncheckedindexedaccess"
     },
     {
@@ -1206,7 +1074,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_outdir",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "outdir"
     },
     {
@@ -1217,7 +1085,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_resolvejsonmodule",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "resolvejsonmodule"
     },
     {
@@ -1228,7 +1096,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_skiplibcheck",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "skiplibcheck"
     },
     {
@@ -1239,7 +1107,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_sourcemap",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "sourcemap"
     },
     {
@@ -1250,7 +1118,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_strict",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "strict"
     },
     {
@@ -1261,7 +1129,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_target",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "target"
     },
     {
@@ -1272,7 +1140,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_verbatimmodulesyntax",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "verbatimmodulesyntax"
     },
     {
@@ -1283,7 +1151,7 @@
       "_origin": "ast",
       "id": "tsconfig_include",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "include"
     },
     {
@@ -1294,7 +1162,7 @@
       "_origin": "ast",
       "id": "ref_api",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "api"
     },
     {
@@ -1305,7 +1173,7 @@
       "_origin": "ast",
       "id": "ref_es2023",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "es2023"
     },
     {
@@ -1316,7 +1184,7 @@
       "_origin": "ast",
       "id": "ref_src",
       "community": 2,
-      "community_name": "compilerOptions",
+      "community_name": "TypeScript Config",
       "norm_label": "src"
     },
     {
@@ -1327,7 +1195,7 @@
       "_origin": "ast",
       "id": "src_assets_logo_data",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "logo-data.ts"
     },
     {
@@ -1338,7 +1206,7 @@
       "_origin": "ast",
       "id": "src_assets_logo_data_logo_base64",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "logo_base64"
     },
     {
@@ -1347,10 +1215,10 @@
       "source_file": "src/config/env.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_config_env",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "env.ts"
+      "community_name": "Env & Logo Config",
+      "norm_label": "env.ts",
+      "id": "src_config_env"
     },
     {
       "label": "env",
@@ -1358,10 +1226,10 @@
       "source_file": "src/config/env.ts",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "src_config_env_env",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "env"
+      "community_name": "Env & Logo Config",
+      "norm_label": "env",
+      "id": "src_config_env_env"
     },
     {
       "label": "logo.ts",
@@ -1371,7 +1239,7 @@
       "_origin": "ast",
       "id": "src_config_logo",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "logo.ts"
     },
     {
@@ -1382,7 +1250,7 @@
       "_origin": "ast",
       "id": "src_config_logo_logo",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "logo"
     },
     {
@@ -1393,7 +1261,7 @@
       "_origin": "ast",
       "id": "src_config_logo_mime_by_extension",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "mime_by_extension"
     },
     {
@@ -1404,7 +1272,7 @@
       "_origin": "ast",
       "id": "src_config_mailtrap",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "mailtrap.ts"
     },
     {
@@ -1415,7 +1283,7 @@
       "_origin": "ast",
       "id": "src_config_mailtrap_mailtrap",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "mailtrap"
     },
     {
@@ -1426,7 +1294,7 @@
       "_origin": "ast",
       "id": "src_controllers_contact_email_controller",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "contact-email-controller.ts"
     },
     {
@@ -1437,96 +1305,8 @@
       "_origin": "ast",
       "id": "src_controllers_curriculum_email_controller",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "curriculum-email-controller.ts"
-    },
-    {
-      "label": "contact-email-schema.ts",
-      "file_type": "code",
-      "source_file": "src/schemas/contact-email-schema.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_schemas_contact_email_schema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "contact-email-schema.ts"
-    },
-    {
-      "label": "curriculum-email-schema.ts",
-      "file_type": "code",
-      "source_file": "src/schemas/curriculum-email-schema.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_schemas_curriculum_email_schema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "curriculum-email-schema.ts"
-    },
-    {
-      "label": "curriculumBodySchema",
-      "file_type": "code",
-      "source_file": "src/schemas/curriculum-email-schema.ts",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_schemas_curriculum_email_schema_curriculumbodyschema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "curriculumbodyschema"
-    },
-    {
-      "label": "schemas/shared.ts",
-      "file_type": "code",
-      "source_file": "src/schemas/shared.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_schemas_shared",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "schemas/shared.ts"
-    },
-    {
-      "label": "emailSchema",
-      "file_type": "code",
-      "source_file": "src/schemas/shared.ts",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_schemas_shared_emailschema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "emailschema"
-    },
-    {
-      "label": "nameSchema",
-      "file_type": "code",
-      "source_file": "src/schemas/shared.ts",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "src_schemas_shared_nameschema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "nameschema"
-    },
-    {
-      "label": "phoneSchema",
-      "file_type": "code",
-      "source_file": "src/schemas/shared.ts",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "src_schemas_shared_phoneschema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "phoneschema"
-    },
-    {
-      "label": "resumeFileSchema",
-      "file_type": "code",
-      "source_file": "src/schemas/shared.ts",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "src_schemas_shared_resumefileschema",
-      "community": 3,
-      "community_name": "contact-email-controller.ts",
-      "norm_label": "resumefileschema"
     },
     {
       "label": "server.ts",
@@ -1536,7 +1316,7 @@
       "_origin": "ast",
       "id": "src_server",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "server.ts"
     },
     {
@@ -1547,7 +1327,7 @@
       "_origin": "ast",
       "id": "src_server_app",
       "community": 3,
-      "community_name": "contact-email-controller.ts",
+      "community_name": "Env & Logo Config",
       "norm_label": "app"
     },
     {
@@ -1556,10 +1336,10 @@
       "source_file": "src/controllers/health-controller.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_controllers_health_controller",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
-      "norm_label": "health-controller.ts"
+      "community_name": "Routes & Middleware",
+      "norm_label": "health-controller.ts",
+      "id": "src_controllers_health_controller"
     },
     {
       "label": "upload-middleware.ts",
@@ -1569,7 +1349,7 @@
       "_origin": "ast",
       "id": "src_middlewares_upload_middleware",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "upload-middleware.ts"
     },
     {
@@ -1580,7 +1360,7 @@
       "_origin": "ast",
       "id": "src_middlewares_upload_middleware_uploadresume",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "uploadresume"
     },
     {
@@ -1589,10 +1369,10 @@
       "source_file": "src/middlewares/validate-schema-middleware.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_middlewares_validate_schema_middleware",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
-      "norm_label": "validate-schema-middleware.ts"
+      "community_name": "Routes & Middleware",
+      "norm_label": "validate-schema-middleware.ts",
+      "id": "src_middlewares_validate_schema_middleware"
     },
     {
       "label": "contact-email-routes.ts",
@@ -1602,7 +1382,7 @@
       "_origin": "ast",
       "id": "src_routes_contact_email_routes",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "contact-email-routes.ts"
     },
     {
@@ -1613,7 +1393,7 @@
       "_origin": "ast",
       "id": "src_routes_contact_email_routes_router",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "router"
     },
     {
@@ -1624,7 +1404,7 @@
       "_origin": "ast",
       "id": "src_routes_curriculum_email_routes",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "curriculum-email-routes.ts"
     },
     {
@@ -1635,7 +1415,7 @@
       "_origin": "ast",
       "id": "src_routes_curriculum_email_routes_router",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "router"
     },
     {
@@ -1646,7 +1426,7 @@
       "_origin": "ast",
       "id": "src_routes_health_routes",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "health-routes.ts"
     },
     {
@@ -1657,7 +1437,7 @@
       "_origin": "ast",
       "id": "src_routes_health_routes_router",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "router"
     },
     {
@@ -1668,7 +1448,7 @@
       "_origin": "ast",
       "id": "src_routes_index",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "routes/index.ts"
     },
     {
@@ -1679,7 +1459,7 @@
       "_origin": "ast",
       "id": "src_routes_index_router",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "router"
     },
     {
@@ -1690,7 +1470,7 @@
       "_origin": "ast",
       "id": "src_schemas_contact_email_schema_contactemailschema",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "contactemailschema"
     },
     {
@@ -1701,7 +1481,7 @@
       "_origin": "ast",
       "id": "src_schemas_curriculum_email_schema_curriculumrequestschema",
       "community": 4,
-      "community_name": "curriculum-email-routes.ts",
+      "community_name": "Routes & Middleware",
       "norm_label": "curriculumrequestschema"
     },
     {
@@ -1712,7 +1492,7 @@
       "_origin": "ast",
       "id": "src_templates_contact_email",
       "community": 5,
-      "community_name": "templates/shared.ts",
+      "community_name": "Email Templates",
       "norm_label": "contact-email.ts"
     },
     {
@@ -1723,7 +1503,7 @@
       "_origin": "ast",
       "id": "src_templates_curriculum_email",
       "community": 5,
-      "community_name": "templates/shared.ts",
+      "community_name": "Email Templates",
       "norm_label": "curriculum-email.ts"
     },
     {
@@ -1732,10 +1512,10 @@
       "source_file": "src/templates/shared.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_templates_shared",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "templates/shared.ts"
+      "community_name": "Email Templates",
+      "norm_label": "templates/shared.ts",
+      "id": "src_templates_shared"
     },
     {
       "label": "BRAND_COLOR",
@@ -1743,10 +1523,10 @@
       "source_file": "src/templates/shared.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_templates_shared_brand_color",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "brand_color"
+      "community_name": "Email Templates",
+      "norm_label": "brand_color",
+      "id": "src_templates_shared_brand_color"
     },
     {
       "label": "BRAND_COLOR_LIGHT",
@@ -1754,10 +1534,10 @@
       "source_file": "src/templates/shared.ts",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "src_templates_shared_brand_color_light",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "brand_color_light"
+      "community_name": "Email Templates",
+      "norm_label": "brand_color_light",
+      "id": "src_templates_shared_brand_color_light"
     },
     {
       "label": "HEADER_COLOR",
@@ -1765,10 +1545,10 @@
       "source_file": "src/templates/shared.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "src_templates_shared_header_color",
       "community": 5,
-      "community_name": "templates/shared.ts",
-      "norm_label": "header_color"
+      "community_name": "Email Templates",
+      "norm_label": "header_color",
+      "id": "src_templates_shared_header_color"
     },
     {
       "label": "api/index.ts",
@@ -1778,7 +1558,7 @@
       "_origin": "ast",
       "id": "api_index",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "api/index.ts"
     },
     {
@@ -1789,7 +1569,7 @@
       "_origin": "ast",
       "id": "src_app",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "app.ts"
     },
     {
@@ -1800,7 +1580,7 @@
       "_origin": "ast",
       "id": "src_config_swagger",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "swagger.ts"
     },
     {
@@ -1811,7 +1591,7 @@
       "_origin": "ast",
       "id": "src_config_swagger_docs",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "swagger-docs.ts"
     },
     {
@@ -1822,7 +1602,7 @@
       "_origin": "ast",
       "id": "src_config_swagger_docs_swaggerdocshtml",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "swaggerdocshtml"
     },
     {
@@ -1833,7 +1613,7 @@
       "_origin": "ast",
       "id": "src_config_swagger_options",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "options"
     },
     {
@@ -1844,7 +1624,7 @@
       "_origin": "ast",
       "id": "src_config_swagger_swaggerspec",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "swaggerspec"
     },
     {
@@ -1855,7 +1635,7 @@
       "_origin": "ast",
       "id": "src_index",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "src/index.ts"
     },
     {
@@ -1866,7 +1646,7 @@
       "_origin": "ast",
       "id": "src_middlewares_error_handler_middleware",
       "community": 6,
-      "community_name": "app.ts",
+      "community_name": "App Bootstrap & Swagger",
       "norm_label": "error-handler-middleware.ts"
     },
     {
@@ -1875,10 +1655,10 @@
       "source_file": "src/middlewares/not-found-middleware.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_middlewares_not_found_middleware",
       "community": 6,
-      "community_name": "app.ts",
-      "norm_label": "not-found-middleware.ts"
+      "community_name": "App Bootstrap & Swagger",
+      "norm_label": "not-found-middleware.ts",
+      "id": "src_middlewares_not_found_middleware"
     },
     {
       "label": "dependencies",
@@ -1888,239 +1668,228 @@
       "_origin": "ast",
       "id": "package_dependencies",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "dependencies"
     },
     {
-      "label": "cors",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "package_dependencies_cors",
-      "community": 7,
-      "community_name": "dependencies",
-      "norm_label": "cors"
-    },
-    {
       "label": "dotenv",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "package_dependencies_dotenv",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "dotenv"
     },
     {
       "label": "express",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "package_dependencies_express",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "express"
     },
     {
       "label": "mailtrap",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "package_dependencies_mailtrap",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "mailtrap"
     },
     {
       "label": "multer",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "package_dependencies_multer",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "multer"
     },
     {
       "label": "swagger-jsdoc",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "package_dependencies_swagger_jsdoc",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "swagger-jsdoc"
     },
     {
       "label": "zod",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "package_dependencies_zod",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "zod"
-    },
-    {
-      "label": "cors",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "cors",
-      "community": 7,
-      "community_name": "dependencies",
-      "norm_label": "cors"
     },
     {
       "label": "dotenv",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "dotenv",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "dotenv"
     },
     {
       "label": "express",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "express",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "express"
     },
     {
       "label": "mailtrap",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "mailtrap",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "mailtrap"
     },
     {
       "label": "multer",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "multer",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "multer"
     },
     {
       "label": "swagger-jsdoc",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "swagger_jsdoc",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "swagger-jsdoc"
     },
     {
       "label": "zod",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "zod",
       "community": 7,
-      "community_name": "dependencies",
+      "community_name": "Runtime Dependencies",
       "norm_label": "zod"
     },
     {
-      "label": "AGENTS.md",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
+      "label": "contact-email-schema.ts",
+      "file_type": "code",
+      "source_file": "src/schemas/contact-email-schema.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents",
+      "id": "src_schemas_contact_email_schema",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "agents.md"
+      "community_name": "Validation Schemas",
+      "norm_label": "contact-email-schema.ts"
     },
     {
-      "label": "AGENTS.md",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
+      "label": "curriculum-email-schema.ts",
+      "file_type": "code",
+      "source_file": "src/schemas/curriculum-email-schema.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents_agents_md",
+      "id": "src_schemas_curriculum_email_schema",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "agents.md"
+      "community_name": "Validation Schemas",
+      "norm_label": "curriculum-email-schema.ts"
     },
     {
-      "label": "Architecture",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L22",
+      "label": "curriculumBodySchema",
+      "file_type": "code",
+      "source_file": "src/schemas/curriculum-email-schema.ts",
+      "source_location": "L4",
       "_origin": "ast",
-      "id": "agents_architecture",
+      "id": "src_schemas_curriculum_email_schema_curriculumbodyschema",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "architecture"
+      "community_name": "Validation Schemas",
+      "norm_label": "curriculumbodyschema"
     },
     {
-      "label": "Commands",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L5",
+      "label": "schemas/shared.ts",
+      "file_type": "code",
+      "source_file": "src/schemas/shared.ts",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "agents_commands",
+      "id": "src_schemas_shared",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "commands"
+      "community_name": "Validation Schemas",
+      "norm_label": "schemas/shared.ts"
     },
     {
-      "label": "Conventions (non-negotiable, enforced by pre-commit hooks)",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L14",
+      "label": "emailSchema",
+      "file_type": "code",
+      "source_file": "src/schemas/shared.ts",
+      "source_location": "L4",
       "_origin": "ast",
-      "id": "agents_conventions_non_negotiable_enforced_by_pre_commit_hooks",
+      "id": "src_schemas_shared_emailschema",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "conventions (non-negotiable, enforced by pre-commit hooks)"
+      "community_name": "Validation Schemas",
+      "norm_label": "emailschema"
     },
     {
-      "label": "Gotchas",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L31",
+      "label": "nameSchema",
+      "file_type": "code",
+      "source_file": "src/schemas/shared.ts",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "agents_gotchas",
+      "id": "src_schemas_shared_nameschema",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "gotchas"
+      "community_name": "Validation Schemas",
+      "norm_label": "nameschema"
     },
     {
-      "label": "graphify",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "L37",
+      "label": "phoneSchema",
+      "file_type": "code",
+      "source_file": "src/schemas/shared.ts",
+      "source_location": "L16",
       "_origin": "ast",
-      "id": "agents_graphify",
+      "id": "src_schemas_shared_phoneschema",
       "community": 8,
-      "community_name": "AGENTS.md",
-      "norm_label": "graphify"
+      "community_name": "Validation Schemas",
+      "norm_label": "phoneschema"
+    },
+    {
+      "label": "resumeFileSchema",
+      "file_type": "code",
+      "source_file": "src/schemas/shared.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "src_schemas_shared_resumefileschema",
+      "community": 8,
+      "community_name": "Validation Schemas",
+      "norm_label": "resumefileschema"
     },
     {
       "label": ".prettierrc.json",
@@ -2128,10 +1897,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "prettierrc",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": ".prettierrc.json"
+      "community_name": "Prettier Formatting",
+      "norm_label": ".prettierrc.json",
+      "id": "prettierrc"
     },
     {
       "label": "endOfLine",
@@ -2139,10 +1908,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "prettierrc_endofline",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": "endofline"
+      "community_name": "Prettier Formatting",
+      "norm_label": "endofline",
+      "id": "prettierrc_endofline"
     },
     {
       "label": "printWidth",
@@ -2150,10 +1919,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "prettierrc_printwidth",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": "printwidth"
+      "community_name": "Prettier Formatting",
+      "norm_label": "printwidth",
+      "id": "prettierrc_printwidth"
     },
     {
       "label": "semi",
@@ -2161,10 +1930,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "prettierrc_semi",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": "semi"
+      "community_name": "Prettier Formatting",
+      "norm_label": "semi",
+      "id": "prettierrc_semi"
     },
     {
       "label": "singleQuote",
@@ -2172,10 +1941,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "prettierrc_singlequote",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": "singlequote"
+      "community_name": "Prettier Formatting",
+      "norm_label": "singlequote",
+      "id": "prettierrc_singlequote"
     },
     {
       "label": "tabWidth",
@@ -2183,10 +1952,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "prettierrc_tabwidth",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": "tabwidth"
+      "community_name": "Prettier Formatting",
+      "norm_label": "tabwidth",
+      "id": "prettierrc_tabwidth"
     },
     {
       "label": "trailingComma",
@@ -2194,10 +1963,10 @@
       "source_file": ".prettierrc.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "prettierrc_trailingcomma",
       "community": 9,
-      "community_name": ".prettierrc.json",
-      "norm_label": "trailingcomma"
+      "community_name": "Prettier Formatting",
+      "norm_label": "trailingcomma",
+      "id": "prettierrc_trailingcomma"
     },
     {
       "label": "Mailtrap Logo (src/assets/logo.png)",
@@ -2208,11 +1977,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "src_assets_logo",
       "community": 13,
-      "community_name": "Mailtrap Logo (src/assets/logo.png)",
-      "norm_label": "mailtrap logo (src/assets/logo.png)",
-      "_origin": "semantic",
-      "id": "src_assets_logo"
+      "community_name": "Brand Logo Asset",
+      "norm_label": "mailtrap logo (src/assets/logo.png)"
     }
   ],
   "links": [
@@ -2244,42 +2012,6 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/templates/contact-email.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_templates_contact_email_rendercontactemail",
-      "target": "src_templates_shared_escapehtml"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/templates/contact-email.ts",
-      "source_location": "L71",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_templates_contact_email_rendercontactemail",
-      "target": "src_templates_shared_renderemaillayout"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/templates/curriculum-email.ts",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_templates_curriculum_email_rendercurriculumemail",
-      "target": "src_templates_shared_escapehtml"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
       "source_file": "src/templates/curriculum-email.ts",
       "source_location": "L80",
       "weight": 1.0,
@@ -2292,25 +2024,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/templates/curriculum-email.ts",
-      "source_location": "L87",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_templates_curriculum_email_rendercurriculumemail",
-      "target": "src_templates_shared_renderemaillayout"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
       "source_file": "src/templates/shared.ts",
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared_renderbrandheader",
-      "target": "src_templates_shared_escapehtml",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_escapehtml"
     },
     {
       "relation": "calls",
@@ -2320,9 +2040,9 @@
       "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared_renderemaillayout",
-      "target": "src_templates_shared_renderbrandheader",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_renderbrandheader"
     },
     {
       "relation": "extends",
@@ -2404,18 +2124,6 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "source": "package_dependencies_cors",
-      "target": "cors",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
       "source": "package_dependencies_dotenv",
       "target": "dotenv",
       "confidence_score": 1.0
@@ -2424,7 +2132,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2436,7 +2144,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2448,7 +2156,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2460,7 +2168,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2472,7 +2180,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2484,7 +2192,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2496,7 +2204,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2508,7 +2216,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L44",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2520,7 +2228,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L45",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2532,7 +2240,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2544,7 +2252,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L46",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2556,7 +2264,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L49",
+      "source_location": "L47",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2568,7 +2276,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L50",
+      "source_location": "L48",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2580,7 +2288,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L49",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2592,7 +2300,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L50",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2604,19 +2312,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "source": "package_devdependencies_types_cors",
-      "target": "types_cors",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L40",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2628,7 +2324,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L41",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2640,7 +2336,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L42",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2652,7 +2348,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L43",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2664,7 +2360,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L51",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2676,7 +2372,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L52",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -2689,19 +2385,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app",
-      "target": "src_config_env_env",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app.ts",
-      "source_location": "L4",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -2713,7 +2397,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L5",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -2725,7 +2409,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L6",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -2737,7 +2421,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L7",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -3012,6 +2696,18 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/routes/health-routes.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_routes_health_routes",
+      "target": "src_controllers_health_controller_gethealth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/routes/index.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -3265,19 +2961,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app",
-      "target": "src_config_env",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app.ts",
-      "source_location": "L4",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -3289,7 +2973,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L5",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -3301,7 +2985,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L6",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -3313,7 +2997,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L7",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -3743,160 +3427,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents",
-      "target": "agents_agents_md",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents_agents_md",
-      "target": "agents_conventions_non_negotiable_enforced_by_pre_commit_hooks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents_agents_md",
-      "target": "agents_architecture",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents_agents_md",
-      "target": "agents_gotchas",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents_agents_md",
-      "target": "agents_graphify",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AGENTS.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "agents_agents_md",
-      "target": "agents_commands",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p",
-      "target": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_q_why_does_devdependencies_connect_lint_tooling_to_package_metadata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_q_why_does_devdependencies_connect_lint_tooling_to_package_metadata",
-      "target": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_answer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_q_why_does_devdependencies_connect_lint_tooling_to_package_metadata",
-      "target": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_outcome",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_q_why_does_devdependencies_connect_lint_tooling_to_package_metadata",
-      "target": "graphify_out_memory_query_20260818_133151_why_does_devdependencies_connect_lint_tooling_to_p_source_nodes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies",
-      "target": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_q_why_does_dependencies_connect_runtime_dependencies_to_package_metadata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_q_why_does_dependencies_connect_runtime_dependencies_to_package_metadata",
-      "target": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_answer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_q_why_does_dependencies_connect_runtime_dependencies_to_package_metadata",
-      "target": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_outcome",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/memory/query_20260818_133332_why_does_dependencies_connect_runtime_dependencies.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_q_why_does_dependencies_connect_runtime_dependencies_to_package_metadata",
-      "target": "graphify_out_memory_query_20260818_133332_why_does_dependencies_connect_runtime_dependencies_source_nodes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
@@ -3975,7 +3505,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -4034,7 +3564,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_cors",
+      "target": "package_dependencies_dotenv",
       "confidence_score": 1.0
     },
     {
@@ -4045,7 +3575,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_dotenv",
+      "target": "package_dependencies_express",
       "confidence_score": 1.0
     },
     {
@@ -4056,7 +3586,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_express",
+      "target": "package_dependencies_mailtrap",
       "confidence_score": 1.0
     },
     {
@@ -4067,7 +3597,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_mailtrap",
+      "target": "package_dependencies_multer",
       "confidence_score": 1.0
     },
     {
@@ -4078,7 +3608,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_multer",
+      "target": "package_dependencies_swagger_jsdoc",
       "confidence_score": 1.0
     },
     {
@@ -4089,17 +3619,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
-      "target": "package_dependencies_swagger_jsdoc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L35",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_dependencies",
       "target": "package_dependencies_zod",
       "confidence_score": 1.0
     },
@@ -4107,7 +3626,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4118,7 +3637,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4129,7 +3648,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4140,18 +3659,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_cors",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4162,7 +3670,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4173,7 +3681,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4184,7 +3692,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4195,7 +3703,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4206,7 +3714,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4217,7 +3725,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4228,7 +3736,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L49",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4239,7 +3747,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L50",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4250,7 +3758,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4261,7 +3769,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4272,7 +3780,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4283,7 +3791,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -4407,9 +3915,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "prettierrc",
-      "target": "prettierrc_semi",
-      "confidence_score": 1.0
+      "target": "prettierrc_semi"
     },
     {
       "relation": "contains",
@@ -4418,9 +3926,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "prettierrc",
-      "target": "prettierrc_singlequote",
-      "confidence_score": 1.0
+      "target": "prettierrc_singlequote"
     },
     {
       "relation": "contains",
@@ -4429,9 +3937,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "prettierrc",
-      "target": "prettierrc_trailingcomma",
-      "confidence_score": 1.0
+      "target": "prettierrc_trailingcomma"
     },
     {
       "relation": "contains",
@@ -4440,9 +3948,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "prettierrc",
-      "target": "prettierrc_printwidth",
-      "confidence_score": 1.0
+      "target": "prettierrc_printwidth"
     },
     {
       "relation": "contains",
@@ -4451,9 +3959,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "prettierrc",
-      "target": "prettierrc_tabwidth",
-      "confidence_score": 1.0
+      "target": "prettierrc_tabwidth"
     },
     {
       "relation": "contains",
@@ -4462,15 +3970,15 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "prettierrc",
-      "target": "prettierrc_endofline",
-      "confidence_score": 1.0
+      "target": "prettierrc_endofline"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/app.ts",
-      "source_location": "L9",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -4495,9 +4003,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_config_env",
-      "target": "src_config_env_env",
-      "confidence_score": 1.0
+      "target": "src_config_env_env"
     },
     {
       "relation": "contains",
@@ -4506,9 +4014,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_config_env",
-      "target": "src_config_env_getenv",
-      "confidence_score": 1.0
+      "target": "src_config_env_getenv"
     },
     {
       "relation": "contains",
@@ -4616,9 +4124,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_controllers_health_controller",
-      "target": "src_controllers_health_controller_gethealth",
-      "confidence_score": 1.0
+      "target": "src_controllers_health_controller_gethealth"
     },
     {
       "relation": "contains",
@@ -4638,9 +4146,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_middlewares_not_found_middleware",
-      "target": "src_middlewares_not_found_middleware_notfoundhandler",
-      "confidence_score": 1.0
+      "target": "src_middlewares_not_found_middleware_notfoundhandler"
     },
     {
       "relation": "contains",
@@ -4660,9 +4168,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_middlewares_validate_schema_middleware",
-      "target": "src_middlewares_validate_schema_middleware_validationsource",
-      "confidence_score": 1.0
+      "target": "src_middlewares_validate_schema_middleware_validationsource"
     },
     {
       "relation": "contains",
@@ -4671,9 +4179,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_middlewares_validate_schema_middleware",
-      "target": "src_middlewares_validate_schema_middleware_validateschema",
-      "confidence_score": 1.0
+      "target": "src_middlewares_validate_schema_middleware_validateschema"
     },
     {
       "relation": "contains",
@@ -4891,9 +4399,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_brand_color",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_brand_color"
     },
     {
       "relation": "contains",
@@ -4902,9 +4410,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_brandheaderdata",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_brandheaderdata"
     },
     {
       "relation": "contains",
@@ -4913,9 +4421,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_renderbrandheader",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_renderbrandheader"
     },
     {
       "relation": "contains",
@@ -4924,9 +4432,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_brand_color_light",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_brand_color_light"
     },
     {
       "relation": "contains",
@@ -4935,9 +4443,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_emaillayoutdata",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_emaillayoutdata"
     },
     {
       "relation": "contains",
@@ -4946,9 +4454,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_header_color",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_header_color"
     },
     {
       "relation": "contains",
@@ -4957,9 +4465,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_renderemaillayout",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_renderemaillayout"
     },
     {
       "relation": "contains",
@@ -4968,9 +4476,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_templates_shared",
-      "target": "src_templates_shared_escapehtml",
-      "confidence_score": 1.0
+      "target": "src_templates_shared_escapehtml"
     },
     {
       "relation": "contains",
@@ -5198,19 +4706,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "src/app.ts",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app_createapp",
-      "target": "src_middlewares_not_found_middleware_notfoundhandler"
-    },
-    {
-      "relation": "indirect_call",
-      "context": "argument",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/app.ts",
-      "source_location": "L23",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_createapp",
@@ -5239,20 +4735,8 @@
       "confidence_score": 0.8,
       "source": "src_routes_curriculum_email_routes",
       "target": "src_controllers_curriculum_email_controller_sendcurriculumemail"
-    },
-    {
-      "relation": "indirect_call",
-      "context": "argument",
-      "confidence": "INFERRED",
-      "source_file": "src/routes/health-routes.ts",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 0.8,
-      "source": "src_routes_health_routes",
-      "target": "src_controllers_health_controller_gethealth"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0d3cf06cae24f6ef39d1c848f9cddcfe78afdff8"
+  "built_at_commit": "858c02e96942cd26e75bcacb0cae3dc894e80adb"
 }

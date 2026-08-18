@@ -32,7 +32,7 @@ Express 5 + TypeScript API (ESM) that sends emails via Mailtrap. No test suite, 
 
 - **`src/assets/logo-data.ts` is generated** from `src/assets/logo.png` (base64, header says "nao editar"). Never edit by hand — if the logo changes, regenerate it. `src/config/logo.ts` falls back: file → embedded base64 → brand name in header.
 - Email templates live in `src/templates/` (HTML strings); controllers call `render*Email()` and send via `mailtrap` client in `src/config/mailtrap.ts`.
-- Resume upload uses multer memory storage with `MAX_RESUME_SIZE_MB` limit (default 5 MB).
+- Resume upload uses multer memory storage with `MAX_RESUME_SIZE_MB` limit (default 4 MB).
 
 ## graphify
 

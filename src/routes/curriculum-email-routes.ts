@@ -37,7 +37,7 @@ const router = Router()
  *               resume:
  *                 type: string
  *                 format: binary
- *                 description: Currículo em PDF (máx. 5 MB)
+ *                 description: Currículo em PDF (máx. 4 MB)
  *     responses:
  *       200:
  *         description: Currículo enviado com sucesso
