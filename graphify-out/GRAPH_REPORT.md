@@ -1,112 +1,110 @@
-# Graph Report - mailtrap-send-email  (2026-08-17)
+# Graph Report - mailtrap-send-email  (2026-08-18)
 
 ## Corpus Check
-- Corpus is ~3,605 words - fits in a single context window. You may not need a graph.
+- 26 files · ~3,849 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 170 nodes · 235 edges · 12 communities
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.8)
+- 177 nodes · 239 edges · 14 communities (12 shown, 2 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- Dev Tooling & Linting
+- Lint Tooling
+- Package Metadata
 - TypeScript Config
-- Email Config & Controllers
+- Env & Logo Config
 - Routes & Middleware
 - Email Templates
+- App Bootstrap & Swagger
 - Runtime Dependencies
-- Package Metadata
-- App Bootstrap & Errors
-- NPM Scripts
-- Prettier Config
+- Validation Schemas
+- Prettier Formatting
+- Vercel Deployment
+- Brand Logo Asset
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 19 edges
-2. `scripts` - 9 edges
-3. `env` - 9 edges
-4. `renderCurriculumEmail()` - 6 edges
-5. `escapeHtml()` - 6 edges
-6. `renderEmailLayout()` - 6 edges
-7. `renderContactEmail()` - 5 edges
-8. `createApp()` - 4 edges
-9. `*.ts` - 3 edges
-10. `logo` - 3 edges
+1. `compilerOptions` - 17 edges
+2. `env` - 9 edges
+3. `scripts` - 9 edges
+4. `createApp()` - 5 edges
+5. `escapeHtml()` - 4 edges
+6. `renderEmailLayout()` - 4 edges
+7. `renderCurriculumEmail()` - 4 edges
+8. `validateSchema()` - 3 edges
+9. `renderBrandHeader()` - 3 edges
+10. `BRAND_COLOR` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `createApp()` --indirect_call--> `errorHandler()`  [INFERRED]
   src/app.ts → src/middlewares/error-handler-middleware.ts
-- `createApp()` --indirect_call--> `notFoundHandler()`  [INFERRED]
-  src/app.ts → src/middlewares/not-found-middleware.ts
 - `sendContactEmail()` --calls--> `renderContactEmail()`  [EXTRACTED]
   src/controllers/contact-email-controller.ts → src/templates/contact-email.ts
 - `sendCurriculumEmail()` --calls--> `renderCurriculumEmail()`  [EXTRACTED]
   src/controllers/curriculum-email-controller.ts → src/templates/curriculum-email.ts
-- `renderContactEmail()` --calls--> `escapeHtml()`  [EXTRACTED]
-  src/templates/contact-email.ts → src/templates/shared.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (12 total, 0 thin omitted)
+## Communities (14 total, 2 thin omitted)
 
-### Community 0 - "Dev Tooling & Linting"
+### Community 0 - "Lint Tooling"
 Cohesion: 0.06
 Nodes (33): @commitlint/cli, @commitlint/config-conventional, eslint, eslint-config-prettier, @eslint/js, globals, husky, lint-staged (+25 more)
 
-### Community 1 - "TypeScript Config"
+### Community 1 - "Package Metadata"
 Cohesion: 0.09
-Nodes (22): ES2023, src, compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, esModuleInterop, forceConsistentCasingInFileNames, lib (+14 more)
+Nodes (22): author, description, engines, node, keywords, license, lint-staged, *.ts (+14 more)
 
-### Community 2 - "Email Config & Controllers"
-Cohesion: 0.20
-Nodes (11): env, logo, MIME_BY_EXTENSION, mailtrap, ContactEmailInput, curriculumBodySchema, CurriculumRequestInput, emailSchema (+3 more)
+### Community 2 - "TypeScript Config"
+Cohesion: 0.09
+Nodes (21): api, ES2023, src, compilerOptions, erasableSyntaxOnly, esModuleInterop, forceConsistentCasingInFileNames, lib (+13 more)
 
-### Community 3 - "Routes & Middleware"
-Cohesion: 0.15
-Nodes (12): sendContactEmail(), sendCurriculumEmail(), getHealth(), uploadResume, validateSchema(), ValidationSource, router, router (+4 more)
+### Community 3 - "Env & Logo Config"
+Cohesion: 0.23
+Nodes (8): LOGO_BASE64, env, logo, MIME_BY_EXTENSION, mailtrap, sendContactEmail(), app, renderContactEmail()
 
-### Community 4 - "Email Templates"
-Cohesion: 0.25
-Nodes (13): ContactEmailData, renderContactEmail(), CurriculumEmailData, formatFileSize(), renderCurriculumEmail(), BRAND_COLOR, BRAND_COLOR_LIGHT, BrandHeaderData (+5 more)
+### Community 4 - "Routes & Middleware"
+Cohesion: 0.18
+Nodes (10): getHealth(), uploadResume, validateSchema(), ValidationSource, router, router, router, router (+2 more)
 
-### Community 5 - "Runtime Dependencies"
-Cohesion: 0.13
-Nodes (15): dotenv, express, mailtrap, multer, dependencies, dotenv, express, mailtrap (+7 more)
-
-### Community 6 - "Package Metadata"
-Cohesion: 0.14
-Nodes (13): author, description, engines, node, keywords, license, lint-staged, *.ts (+5 more)
-
-### Community 7 - "App Bootstrap & Errors"
-Cohesion: 0.29
-Nodes (6): createApp(), options, swaggerSpec, errorHandler(), notFoundHandler(), app
-
-### Community 8 - "NPM Scripts"
+### Community 5 - "Email Templates"
 Cohesion: 0.22
-Nodes (9): scripts, dev, format, format:check, lint, lint:fix, prepare, start (+1 more)
+Nodes (13): sendCurriculumEmail(), ContactEmailData, CurriculumEmailData, formatFileSize(), renderCurriculumEmail(), BRAND_COLOR, BRAND_COLOR_LIGHT, BrandHeaderData (+5 more)
 
-### Community 9 - "Prettier Config"
+### Community 6 - "App Bootstrap & Swagger"
+Cohesion: 0.24
+Nodes (6): createApp(), swaggerDocsHtml, options, swaggerSpec, errorHandler(), notFoundHandler()
+
+### Community 7 - "Runtime Dependencies"
+Cohesion: 0.15
+Nodes (13): dotenv, express, mailtrap, multer, dependencies, dotenv, express, mailtrap (+5 more)
+
+### Community 8 - "Validation Schemas"
+Cohesion: 0.33
+Nodes (7): ContactEmailInput, curriculumBodySchema, CurriculumRequestInput, emailSchema, nameSchema, phoneSchema, resumeFileSchema
+
+### Community 9 - "Prettier Formatting"
 Cohesion: 0.29
 Nodes (6): endOfLine, printWidth, semi, singleQuote, tabWidth, trailingComma
 
 ## Knowledge Gaps
-- **76 isolated node(s):** `semi`, `singleQuote`, `trailingComma`, `printWidth`, `tabWidth` (+71 more)
+- **77 isolated node(s):** `ValidationSource`, `BrandHeaderData`, `EmailLayoutData`, `HEADER_COLOR`, `endOfLine` (+72 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `Dev Tooling & Linting` to `Package Metadata`?**
-  _High betweenness centrality (0.119) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `Lint Tooling` to `Package Metadata`?**
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `Runtime Dependencies` to `Package Metadata`?**
-  _High betweenness centrality (0.061) - this node is a cross-community bridge._
-- **Why does `scripts` connect `NPM Scripts` to `Package Metadata`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
-- **What connects `semi`, `singleQuote`, `trailingComma` to the rest of the system?**
-  _76 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Dev Tooling & Linting` be split into smaller, more focused modules?**
+  _High betweenness centrality (0.048) - this node is a cross-community bridge._
+- **What connects `ValidationSource`, `BrandHeaderData`, `EmailLayoutData` to the rest of the system?**
+  _77 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Lint Tooling` be split into smaller, more focused modules?**
   _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
-- **Should `TypeScript Config` be split into smaller, more focused modules?**
+- **Should `Package Metadata` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
-- **Should `Runtime Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+- **Should `TypeScript Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
