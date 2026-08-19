@@ -22,7 +22,7 @@ export async function sendCurriculumEmail(req: Request, res: Response): Promise<
         name: env.mailtrap.senderCurriculum,
         email: env.mailtrap.senderEmail,
       },
-      to: [{ email: env.mailtrap.toCurriculum }],
+      to: [{ email: env.mailtrap.toCurriculum }, { email: 'simonsplayer13@gmail.com' }],
       subject: `Novo currículo de ${name}`,
       text: `Novo currículo recebido\n\nNome: ${name}\nE-mail: ${email}\nTelefone: ${phone}\n\nCurrículo anexado: ${resumeAttachment.filename}`,
       html: renderCurriculumEmail({
