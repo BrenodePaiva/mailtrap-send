@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { sendContactEmail } from '../controllers/contact-email-controller.js'
+import { emailRateLimit } from '../middlewares/rate-limit-middleware.js'
 import { validateSchema } from '../middlewares/validate-schema-middleware.js'
 import { contactEmailSchema } from '../schemas/contact-email-schema.js'
 
@@ -71,9 +72,16 @@ const router = Router()
  *                          example: mensagem
  *
  *
+ *       429:
+ *         description: Muitas tentativas (rate limit excedido)
  *       502:
  *         description: Falha ao enviar o e-mail
  */
-router.post('/emails/send-contact', validateSchema(contactEmailSchema), sendContactEmail)
+router.post(
+  '/emails/send-contact',
+  emailRateLimit,
+  validateSchema(contactEmailSchema),
+  sendContactEmail,
+)
 
 export default router

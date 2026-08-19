@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { sendCurriculumEmail } from '../controllers/curriculum-email-controller.js'
+import { emailRateLimit } from '../middlewares/rate-limit-middleware.js'
 import { uploadResume } from '../middlewares/upload-middleware.js'
 import { validateSchema } from '../middlewares/validate-schema-middleware.js'
 import { curriculumRequestSchema } from '../schemas/curriculum-email-schema.js'
@@ -68,11 +69,14 @@ const router = Router()
  *                          example: mensagem
  *       413:
  *         description: Arquivo excede o tamanho máximo permitido
+ *       429:
+ *         description: Muitas tentativas (rate limit excedido)
  *       502:
  *         description: Falha ao enviar o e-mail
  */
 router.post(
   '/emails/send-curriculum',
+  emailRateLimit,
   uploadResume,
   validateSchema(curriculumRequestSchema, 'body-and-file'),
   sendCurriculumEmail,
