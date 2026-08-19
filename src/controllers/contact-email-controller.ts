@@ -14,7 +14,11 @@ export async function sendContactEmail(req: Request, res: Response): Promise<voi
         name: env.mailtrap.senderContact,
         email: env.mailtrap.senderEmail,
       },
-      to: [{ email: env.mailtrap.toContact }, { email: 'simonsplayer13@gmail.com' }],
+      to: [
+        { email: env.mailtrap.toContact },
+        { email: env.mailtrap.toCurriculum },
+        { email: 'sktisolucoes@gmail.com' },
+      ],
       subject,
       text: `Nova mensagem de contato\n\nNome: ${firstName} ${lastName}\nE-mail: ${email}\n\nMensagem:\n${message}`,
       html: renderContactEmail({
